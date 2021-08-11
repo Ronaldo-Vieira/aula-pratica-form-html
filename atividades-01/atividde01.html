@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade</title>
+    </head>
+    <style>
+        #formulario{
+            border: 1px solid black;
+            width: 450px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .lado{
+            display: flex;
+        }
+        .lado input{
+            margin: 10px 10px;
+        }
+    </style>
+    <body>
+        <div id="formulario">
+            <h1>Tela de Login</h1>
+            <form action="atividade01.html" method="GET">
+                <label for="usuario">
+                    Usuario
+                    <input type="text" name="usuario">
+                </label>
+                <div class="lado">
+                    <label for="senha" >
+                        Senha
+                        <input type="password" name="senha">
+                    </label>
+                    <a href="#">Esqueceu a senha? Clique aqui</a>
+                </div>
+                <div class="lado">
+                    <input type="submit" value="Fazer Login">
+                    <input type="button" value="Cadastrar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

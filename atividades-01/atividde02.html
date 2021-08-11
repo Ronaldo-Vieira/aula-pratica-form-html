@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade</title>
+    </head>
+    <style>
+        #formulario{
+            border: 1px solid black;
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+        }
+        fieldset{
+            border: none;
+        }
+        .lado{
+            display: flex;
+        }
+        .lado input{
+            margin: 10px 10px;
+        }
+    </style>
+    <body>
+        <div id="formulario">
+            <form action="atividade02.html" method="GET">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="nome">
+                        Nome:
+                        <input type="text" required>
+                    </label>
+                    <label for="idade">
+                        Idade:
+                        <input type="number" name="idade">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados profissionais</legend>
+                    <label for="escolaridade">
+                        Escolaridade: 
+                        <select>
+                            <option value="-"></option>
+                            <option value="Med">Ensino medio</option>
+                            <option value="grad">Graduação</option>
+                            <option value="pos">Pós-graduação</option>
+                            <option value="out">Outros</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label for="area">
+                        Área de atuação:
+                        <input type="radio" name="area">Gerência
+                        <input type="radio" name="area">Financeiro
+                        <input type="radio" name="area">Recepção
+                    </label>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

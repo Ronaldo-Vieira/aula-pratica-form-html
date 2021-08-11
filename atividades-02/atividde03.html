@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade</title>
+    </head>
+    <body>
+        <div id="formulario">
+            <form action="atividade03.html" method="GET">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="nome">
+                        Nome:
+                        <input type="text" required>
+                    </label>
+                    <br> <br>
+                    <label for="idade">
+                        Idade:
+                        <input type="number" name="idade">
+                    </label>
+                    <br> <br>
+                    <label for="endereço">
+                        Endereço 
+                        <input type="text">
+                    </label>
+                    <br> <br>
+                    <label for="cidade">
+                        Cidade:
+                        <input type="text">
+                    </label>
+                    <br> <br>
+                    Estado:
+                    <select name="estado">
+                        <option value="">Rio de Janeiro</option>
+                        <option value="">Pernambuco</option>
+                        <option value="">São Paulo</option>
+                        <option value="">Manaus</option>
+                        <option value="">Bahia</option>
+                        <option value="">Acre</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados profissionais</legend>
+                    Natureza do Cargo
+                    <br>
+                        <input type="radio" name="cargo" id=""> Gerência
+                        <input type="radio" name="cargo" id=""> Financeiro
+                        <input type="radio" name="cargo" id=""> Recepção
+                        <input type="radio" name="cargo" id=""> Administrativo
+                        <input type="radio" name="cargo" id=""> Juridico
+                    <br> <br>
+                    Área de atuação:
+                    <br>
+                    <label for="computacao">
+                        <input type="checkbox" name="computacao">Computação
+                    </label>
+                    <label for="biologia">
+                        <input type="checkbox" name="biologia">Biologia
+                    </label>
+                    <label for="meio">
+                        <input type="checkbox" name="meio">Meio Ambiente
+                    </label>
+                    <label for="engenharia">
+                        <input type="checkbox" name="engenharia">Engenharia
+                    </label>
+                    <label for="história">
+                        <input type="checkbox" name="história">História
+                    </label>
+                    <br> <br>
+                    Mini-curriculo:
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+                <br> <br>
+                <input type="button" value="Enviar">
+                <button>Limpar</button>
+            </form>
+        </div>
+    </body>
+</html>

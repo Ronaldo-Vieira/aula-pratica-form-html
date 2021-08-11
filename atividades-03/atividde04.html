@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade</title>
+        <style>
+            #container{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid black;
+                padding: 3px;
+                width: 600px;
+            }
+            form{
+                border: 2px solid black;
+            }
+            label{
+                margin-left: 5px;
+            }
+            input[type="text"]{
+                width: 300px;
+            }
+            input[type="datetime"], input[name="sigla"]{
+                width: 80px;
+            }
+            input[type="submit"]{
+                margin-left: 50px;
+                margin-bottom: 5px;
+            }
+            .lado{
+                display: flex;
+                justify-content: space-between;
+            }
+            button{
+                margin-right: 50px;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <table border>
+                <caption>Manutação do Órgão Celegiado</caption>
+                <tr>
+                    <td>Unidade</td>
+                    <td>FACULDADE DE ENGENHARIA DE DE ILHA SOLTEIRA</td>
+                </tr>
+                <tr>
+                    <td>Tipo Colegiado</td>
+                    <td>CONGREGAÇÃO</td>
+                </tr>
+            </table>
+
+            <form action="atividade03.html" method="GET">
+                <legend>Órgão Colegiado</legend>
+                
+                <br>
+                <label for="nome">
+                    Nome:
+                    <input type="text" name="nome" id="nome">
+                </label>
+                <br> <br>
+                
+                <div class="lado">
+                    <div>
+                        <label for="sigla">
+                            Sigla
+                            <input type="text" name="sigla" id="sigla">
+                        </label>
+                        <br> <br>
+                        <label for="ativacao">
+                            Data Ativação:
+                            <input type="datetime" name="ativacao" id="ativacao">
+                        </label>
+                    </div>
+                    <br>
+                    <div>
+                        Status:
+                        <select name="status">
+                            <option value="ativado">ATIVADO</option>
+                            <option value="ativado">DESATIVADO</option>
+                        </select>
+                        <br> <br>
+                        <label for="desativacao">
+                            Data <br> Desativação:
+                            <input type="datetime">
+                        </label>
+                    </div>
+                </div>
+                
+                <br>
+                <label for="origem">
+                    Órgão de Origem
+                    <input type="text" name="origem">
+                </label>
+                <button>Buscar</button>
+                <br> <br>
+                <label for="superior">
+                    Órgão Superior
+                    <input type="text">
+                </label>
+                <button>Buscar</button>
+                <br> <br>
+                
+                <label for="documentacao">Documentação</label>
+                <textarea name="documentacao" cols="30" rows="10"></textarea>
+                <br> <br>
+                <div class="lado">
+                    <input type="submit" value="Salvar">
+                    <button>Excluir</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
